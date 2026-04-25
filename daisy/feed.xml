@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <id>urn:iweb:471C36DD-8212-4826-AC6E-E6993869C266</id>
+ <title>Page list Atom feed</title>
+ <updated>2014-12-18T13:31:33-06:00</updated>
+ <link rel="self" href="feed.xml"/>
+ <generator>iWeb</generator>
+ <author>
+  <name>iWeb</name>
+ </author>
+ <entry>
+  <id>urn:iweb:D6A0491A-00BD-4578-8F9E-A4E888E8F0B0</id>
+  <title>Daisy</title>
+  <title xmlns="urn:iweb:">Daisy</title>
+  <in-navbar xmlns="urn:iweb:">D6A0491A-00BD-4578-8F9E-A4E888E8F0B0</in-navbar>
+  <link rel="alternate" href="Daisy.html"/>
+  <updated>2014-12-18T13:31:33.001-06:00</updated>
+  <content>Daisy</content>
+ </entry>
+</feed>

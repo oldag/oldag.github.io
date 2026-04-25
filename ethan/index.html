@@ -1,0 +1,77 @@
+<HTML>
+<HEAD>
+<TITLE>Ethan Andrew Oldag</TITLE>
+</HEAD>
+
+<BODY>
+
+<h1>Ethan Andrew Oldag</h1>
+
+This is a web photo album for Ethan Andrew Oldag.  He was born October 7, 2005
+at 8:52pm.  He weighed 8 lb 12.5 oz, and was 21.5 inches long.
+
+<p>
+
+Ethan's album(s) now live on <a href="https://photos.oldag.net/2005/Ethan/n-R6c6jx">photos.oldag.net</a>.
+
+<p>
+Ethan's current age:  <form name="count"><input type="text" size="69" name="count2"></form>
+</p>
+
+<script>                    //dec  jan feb mar apr may jun jul aug sep aug nov
+var monthDaysToAdd = new Array(31, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30);
+
+function lifetimer(){
+
+        today = new Date()
+
+        BirthDay = new Date("October 7, 2005 20:52:00");
+
+        y = today.getYear() - BirthDay.getYear();
+        m = today.getMonth() - BirthDay.getMonth();
+        if (m < 0) {
+          y -= 1;
+          m += 12;
+        }
+
+        d = today.getDate() - BirthDay.getDate();
+        if (d < 0) {
+          m -= 1;
+          d += monthDaysToAdd[today.getMonth()];
+        }
+
+        h = today.getHours() - BirthDay.getHours();
+        if (h < 0) {
+          d -= 1;
+          h += 24;
+        }
+
+        mins = today.getMinutes() - BirthDay.getMinutes();
+        if (mins < 0) {
+
+          if (h == 0) {
+            d -= 1;
+            h += 24;
+          }
+
+          h -= 1;
+          mins += 60;
+        }
+
+        document.forms.count.count2.value = y + " years, " + m +  " months, " + d + " days, " + h + " hours, " + mins + " minutes";
+
+        timerID = setTimeout("lifetimer()",1000*30)   ;
+}
+lifetimer();
+</script>
+
+<p>
+<hr>
+<p>
+
+
+
+
+</BODY>
+</HTML>
+
